@@ -77,7 +77,7 @@ function App() {
       </div>
 
       <AddBudgetModal show={showBudgetModal} closeModal={() => setShowBudgetModal(false)} onAddExpenseClick={() => openExpenseModal()} />
-      <AddExpenseModal show={showExpenseModal} defaultBudgetId={addExpenseModalBudgetId} closeModal={() => setShowExpenseModal(false)} />
+      <AddExpenseModal show={showExpenseModal} defaultBudgetId={addExpenseModalBudgetId} setBudgetId={setAddExpenseModalBudgetId} closeModal={() => setShowExpenseModal(false)} />
       <ViewExpensesModal budgetId={viewExpensesBudgetId} closeModal={() => setViewExpensesBudgetId()} onShowEditBudgetModal={()=> setEditBudgetId(viewExpensesBudgetId) } />
       <EditBudgetModal budgetId={editBudgetId} closeModal={() => setEditBudgetId()} />
     </>
